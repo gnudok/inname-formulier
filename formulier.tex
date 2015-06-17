@@ -1,0 +1,63 @@
+%%=====================================================================================
+%%
+%%       Filename:  formulier.tex
+%%
+%%    Description:  
+%%
+%%        Version:  1.0
+%%        Created:  17-06-15
+%%       Revision:  none
+%%
+%%         Author:  YOUR NAME (), 
+%%   Organization:  
+%%      Copyright:  
+%%
+%%          Notes:  
+%%                
+%%=====================================================================================
+\documentclass[a4paper,11pt]{article}
+\usepackage[latin1]{inputenc} 
+\usepackage[pdftex]{hyperref}
+
+\def\labelline#1#2{\lbl{#1}\vbox{\hbox{\TextField[name=#1,width=#2,borderwidth=0]{\null}}\kern0pt\hrule}}
+
+
+\newdimen\longline
+\longline=\textwidth\advance\longline-4cm
+
+\def\LayoutTextField#1#2{#2} % override default in hyperref
+
+\def\lbl#1{\hbox to 12cm{#1\dotfill\strut}}%
+%\def\labelline#1#2{\lbl{#1}\vbox{\hbox{\TextField[name=#1,width=#2]{\null}}\kern2pt\hrule}}
+
+\def\q#1{\hbox to \hsize{\labelline{#1}{\longline}}\vskip1.4ex}
+\pagestyle{empty}
+\begin{document}
+\section*{Inname formulier klant computers}
+Computers met Linux kunnen ter reparatie worden aangeboden, andere operating systemen niet. Voor installatie kunnen alle moderne computers worden aangenomen.
+
+\vspace{0.5cm}
+\begin{Form}
+	\q{Naam}
+	\q{Telefoonnummer}
+	\q{Email}
+	\q{Datum inname}
+	\q{Datum ophaal}
+	\q{Computermerk}
+	\q{Reparatie/Installatie}
+	\q{}
+\end{Form}
+\subsection*{Behandeling}
+\begin{Form}
+	\q{Medewerker}
+	\q{Activiteit}
+	\q{}
+	\q{Commentaar}
+	\q{}
+	\q{Aantal kwartieren werk}
+	\q{Geplaatse onderdelen}
+	\q{}
+	\q{Totaal prijs}
+\end{Form}
+
+\end{document}
