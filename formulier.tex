@@ -15,9 +15,10 @@
 %%          Notes:  
 %%                
 %%=====================================================================================
-\documentclass[a4paper,11pt]{article}
+\documentclass[a4paper,12pt]{article}
 \usepackage[latin1]{inputenc} 
 \usepackage[pdftex]{hyperref}
+\usepackage{eurosym}
 
 \def\labelline#1#2{\lbl{#1}\vbox{\hbox{\TextField[name=#1,width=#2,borderwidth=0]{\null}}\kern0pt\hrule}}
 
@@ -27,7 +28,7 @@
 
 \def\LayoutTextField#1#2{#2} % override default in hyperref
 
-\def\lbl#1{\hbox to 12cm{#1\dotfill\strut}}%
+\def\lbl#1{\hbox to 14cm{#1\dotfill\strut}}%
 %\def\labelline#1#2{\lbl{#1}\vbox{\hbox{\TextField[name=#1,width=#2]{\null}}\kern2pt\hrule}}
 
 \def\q#1{\hbox to \hsize{\labelline{#1}{\longline}}\vskip1.4ex}
@@ -35,6 +36,9 @@
 \begin{document}
 \section*{Inname formulier klant computers}
 Computers met Linux kunnen ter reparatie worden aangeboden, andere operating systemen niet. Voor installatie kunnen alle moderne computers worden aangenomen.
+
+Per kwartier wordt \euro{2,50} gerekend.
+
 
 \vspace{0.5cm}
 \begin{Form}
