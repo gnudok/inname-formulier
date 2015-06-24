@@ -16,6 +16,7 @@
 %%                
 %%=====================================================================================
 \documentclass[a4paper,12pt]{article}
+\usepackage[margin=1in]{geometry}
 \usepackage[latin1]{inputenc} 
 \usepackage[pdftex]{hyperref}
 \usepackage{eurosym}
@@ -33,11 +34,12 @@
 
 \def\q#1{\hbox to \hsize{\labelline{#1}{\longline}}\vskip1.4ex}
 \pagestyle{empty}
+\hyphenation{ope-rating}
 \begin{document}
 \section*{GNUDok inname formulier klant computers}
 Computers met Linux kunnen ter reparatie worden aangeboden, andere operating systemen niet. Voor installatie kunnen alle moderne computers worden aangenomen.
 
-Per kwartier wordt \euro{2,50} gerekend.
+Per kwartier wordt \euro{2,50} gerekend exclusief kosten voor geplaatste onderdelen.
 
 
 \vspace{0.5cm}
@@ -61,6 +63,7 @@ Per kwartier wordt \euro{2,50} gerekend.
 	\q{Aantal kwartieren werk}
 	\q{Geplaatse onderdelen}
 	\q{}
+	\q{Kosten onderdelen}
 	\q{Totaal prijs}
 \end{Form}
 
